@@ -119,7 +119,7 @@ main{
     display: flex;
     justify-content: space-around;
 }
-.skills-contsiner{
+.skills-container{
     display: flex;
     gap: 24px;
 }
@@ -164,4 +164,18 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
+}
+.hide{
+    display: none;
+}
+@media screen and (max-width: 576px){
+    .skills-container, .resume-container, footer, .about-items{
+        flex-direction: column;
+    }
+    footer, .about{
+        padding: 20px;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea{
+       width: calc(100% - 40px); 
+    }
 }
